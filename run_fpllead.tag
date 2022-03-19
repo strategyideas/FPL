@@ -12,25 +12,25 @@ filedet = 'COMP-DTL-' + day + '.csv'
 write `csv_row(['part', 'GW', 'P', 'rank', 'play', 'pteam', 'ppos', 'pts'])` to `filedet`
 write `csv_row(['RANK', 'player', 'URL'])` to `file`
 
-tagui mainfplleaders.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
 tagui nextfpllead.tag
 
-tagui mainfplleaders.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-
-tagui mainfplleaders.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
 tagui nextfpllead.tag
 tagui nextfpllead.tag
 
-tagui mainfplleaders.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
 tagui nextfpllead.tag
 tagui nextfpllead.tag
 tagui nextfpllead.tag
 
-tagui mainfplleaders.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
+tagui nextfpllead.tag
+tagui nextfpllead.tag
+tagui nextfpllead.tag
+tagui nextfpllead.tag
+
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
 tagui nextfpllead.tag
 tagui nextfpllead.tag
 tagui nextfpllead.tag
