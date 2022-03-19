@@ -13,27 +13,27 @@ write `csv_row(['part', 'GW', 'P', 'rank', 'play', 'pteam', 'ppos', 'pts'])` to 
 write `csv_row(['RANK', 'player', 'URL'])` to `file`
 
 tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
 
 tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
 
 tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
 
 tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
 
 tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
-tagui nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
+tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
 
