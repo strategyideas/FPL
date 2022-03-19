@@ -14,26 +14,3 @@ write `csv_row(['RANK', 'player', 'URL'])` to `file`
 
 !tagui/src/tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
 !tagui/src/tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/mainfplleaders.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-tagui https://raw.githubusercontent.com/strategyideas/FPL/master/nextfpllead.tag
-
