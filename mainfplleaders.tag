@@ -9,7 +9,7 @@ filedet = 'COMP-DTL-' + day + '.csv'
 
 for loop from 1 to 10
 	https://fantasy.premierleague.com/leagues/314/standings/c?phase=1&page_new_entries=1&page_standings=`loop`
-	if exists('/html/body/div[2]/div/div/div[1]/div[5]/button[1]')
+	if exist('/html/body/div[2]/div/div/div[1]/div[5]/button[1]')
 		click /html/body/div[2]/div/div/div[1]/div[5]/button[1]
 			for row from 1 to 49 
 				wait 1.0
