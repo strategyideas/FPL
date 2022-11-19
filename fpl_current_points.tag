@@ -8,7 +8,8 @@ print(today)
 py finish
 day = py_result
 file = 'plyr-pts' + day + '.csv'
-
+https://fantasy.premierleague.com/statistics
+wait 5
 write `csv_row(['day', 'PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 for page from 1 to 1
 	for plyr from 1 to 30
