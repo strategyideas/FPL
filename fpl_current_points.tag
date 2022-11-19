@@ -21,5 +21,4 @@ for page from 1 to 1
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[4]/text()[1] to selby
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[5] to form
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[6] to pts
-		write `csv_row([`player`, `team`, `pos`, `price`, `selby`, `form`, `pts`])` to `file`
-		
+		write `csv_row([player, team, pos, price, selby, form, pts])` to `file`
