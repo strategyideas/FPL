@@ -12,7 +12,8 @@ file = 'plyr-pts' + day + '.csv'
 write `csv_row(['PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
-for page from 1 to 1
+for page from 1 to 10
+	wait 5
 	for plyr from 1 to 30
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[2]/button/div/div[2]/div[1] to player
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[2]/button/div/div[2]/div[2]/span[1] to team
@@ -22,3 +23,5 @@ for page from 1 to 1
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[5] to form
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[6] to pts
 		write `csv_row([player, team, pos, price, selby, form, pts])` to `file`
+	wait 2
+	click //*[@id="root"]/div[2]/div/div[1]/div[3]/button[3]/svg
