@@ -9,7 +9,7 @@ py finish
 day = py_result
 file = 'plyr-pts' + day + '.csv'
 
-write `csv_row(['day', 'PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
+write `csv_row(['DAY', 'PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
 for page from 1 to 1
