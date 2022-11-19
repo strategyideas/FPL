@@ -8,9 +8,10 @@ print(today)
 py finish
 day = py_result
 file = 'plyr-pts' + day + '.csv'
+
+write `csv_row(['day', 'PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
-write `csv_row(['day', 'PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 for page from 1 to 1
 	for plyr from 1 to 30
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[2]/button/div/div[2]/div[1] to player
@@ -20,5 +21,5 @@ for page from 1 to 1
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[4]/text()[1] to selby
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[5] to form
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[6] to pts
-		write csv_row(['day', 'player', 'team', 'pos', 'price', 'selby', 'form', 'pts'])` to `file`
+		write `csv_row(['day', 'player', 'team', 'pos', 'price', 'selby', 'form', 'pts'])` to `file`
 		
