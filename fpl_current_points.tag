@@ -12,7 +12,7 @@ file = 'plyr-pts-2011'  + '.csv'
 write `csv_row(['PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
-valid_msg = "Accept All Cookies" 
+valid_msg = "Accept All Crokies" 
 read /html/body/div[2]/div/div/div[1]/div[5]/button[1] to msg
 echo `msg`
 echo `valid_msg`
@@ -43,6 +43,6 @@ for page from 1 to 5
 			echo "Error in moving to next page"
 		click //*[@id="root"]/div[2]/div/div[1]/div[3]/button[3]
 		read //*[@id="root"]/div[2]/div/div[1]/div[3]/div/strong to curr_page						
-		echo `pageno`
+		echo `curr_page`
 		echo `page`
 		wait 
