@@ -23,5 +23,6 @@ for page from 1 to 10
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[5] to form
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[6] to pts
 		write `csv_row([player, team, pos, price, selby, form, pts])` to `file`
+	wait 1
+	click //*[@id="root"]/div[2]/div/div[1]/div[3]/button[3]/span
 	wait 2
-	click //*[@id="root"]/div[2]/div/div[1]/div[3]/button[3]
