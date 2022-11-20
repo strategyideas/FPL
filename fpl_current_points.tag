@@ -45,4 +45,4 @@ for page from 1 to 5
 		read //*[@id="root"]/div[2]/div/div[1]/div[3]/div/strong to curr_page						
 		echo `curr_page`
 		echo `page`
-		wait 
+		wait 1
