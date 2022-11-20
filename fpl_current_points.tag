@@ -12,7 +12,7 @@ file = 'plyr-pts-2011'  + '.csv'
 write `csv_row(['PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
-valid_msg = "Accept All Crokies" 
+valid_msg = "Accept All Cookies" 
 read /html/body/div[2]/div/div/div[1]/div[5]/button[1] to msg
 echo `msg`
 echo `valid_msg`
