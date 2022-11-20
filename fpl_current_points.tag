@@ -24,9 +24,8 @@ for page from 1 to 10
 		read //*[@id="root"]/div[2]/div/div[1]/table/tbody/tr[`plyr`]/td[6] to pts
 		write `csv_row([player, team, pos, price, selby, form, pts])` to `file`
 	wait 1
-	click #root > div:nth-child(2) > div > div.Layout__Main-eg6k6r-1.wXYnc > 
-	div.sc-bdnxRM.sc-gtsrHT.eVZJvz.gfuSqG > button:nth-child(4)
+	click /html/body/main/div/div[2]/div/div[1]/div[3]/button[3]/svg
 	read //*[@id="root"]/div[2]/div/div[1]/div[3]/div/strong to pageno
-	echo pageno
-	echo page
+	echo `pageno`
+	echo `page`
 	wait 2
