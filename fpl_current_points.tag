@@ -12,6 +12,10 @@ file = 'plyr-pts' + day + '.csv'
 write `csv_row(['PLYR', 'TEAM', 'POS', 'PRICE', 'SELBY', 'FORM', 'POINTS'])` to `file`
 https://fantasy.premierleague.com/statistics
 wait 5
+if exist('/html/body/div[2]/div/div/div[1]/div[5]/button[1]')
+	click /html/body/div[2]/div/div/div[1]/div[5]/button[1]
+wait 5
+snap page to fplcurrpts.jpg
 for page from 1 to 10
 	wait 5
 	for plyr from 1 to 30
