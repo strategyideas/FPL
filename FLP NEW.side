@@ -8,23 +8,23 @@
     "name": "FPLMAIN",
     "commands": [{
       "id": "3f99691c-7eb5-4c38-a98d-53ffb89b573e",
-      "comment": "",
+      "comment": "Setting Start Player Index Set to 19 (Should be 1)",
       "command": "store",
-      "target": "1",
+      "target": "18",
       "targets": [],
       "value": "player"
-    }, {
-      "id": "b327caaf-38bd-4d85-aa7d-21ec0bc4f157",
-      "comment": "",
-      "command": "open",
-      "target": "https://fantasy.premierleague.com/statistics",
-      "targets": [],
-      "value": ""
     }, {
       "id": "fb8f7ccb-c15c-4503-a3f2-0c95bf2decbc",
       "comment": "",
       "command": "while",
-      "target": "${player} < 2",
+      "target": "${player} < 20",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7d98c91-3a6d-4a91-a5c0-aa9597821026",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantasy.premierleague.com/statistics",
       "targets": [],
       "value": ""
     }, {
@@ -76,6 +76,104 @@
       "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[6]",
       "targets": [],
       "value": "pts"
+    }, {
+      "id": "624f9392-8675-4d40-ae93-1f952369498e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/main/div/div[2]/div/div[1]/table/tbody/tr[${player}]/td[2]/button/div/div[2]/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffae9e85-b243-4cfd-89a4-72e4558d13f9",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[1]/div",
+      "targets": [],
+      "value": "injured"
+    }, {
+      "id": "f58b8f45-05ba-40e7-b956-0a83d9f7be77",
+      "comment": "",
+      "command": "echo",
+      "target": "injured value for ${name} is ${injured}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2a086ec-117f-4c5c-8998-b12520f4285d",
+      "comment": "",
+      "command": "store",
+      "target": "1",
+      "targets": [],
+      "value": "divval"
+    }, {
+      "id": "5ae1bc92-7187-493e-bfa0-bba436b0694f",
+      "comment": "If player is not injured injured value is 2",
+      "command": "if",
+      "target": "${injured} < 2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "631b131c-1ef2-4aa0-8d09-a878fba26290",
+      "comment": "",
+      "command": "store",
+      "target": "2",
+      "targets": [],
+      "value": "divval"
+    }, {
+      "id": "93936c27-28e1-41fd-a3b0-8058c82c689c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb94a3c-5d30-4f0c-9512-bc3044959c2c",
+      "comment": "",
+      "command": "echo",
+      "target": "Divval is ${divval}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d205a51-ca94-4de7-83ad-bcd5fc12604b",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[1]/div[2]/h2",
+      "targets": [],
+      "value": "fullname"
+    }, {
+      "id": "97565d7e-ada8-4afb-8404-f1e322d63dd7",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[2]/div[1]/div[2]/div[1]/div/strong",
+      "targets": [],
+      "value": "influence"
+    }, {
+      "id": "93c7f74b-79b8-48e5-9413-382df4c63a23",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[2]/div[1]/div[2]/div[2]/div/strong",
+      "targets": [],
+      "value": "create"
+    }, {
+      "id": "acac1975-b98f-400d-91f7-3b8f38a77fa1",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[2]/div[1]/div[2]/div[3]/div/strong",
+      "targets": [],
+      "value": "threat"
+    }, {
+      "id": "61d3b51d-af31-4894-9a91-c604b95f0e16",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[2]/div[2]/div[2]/div/div/strong",
+      "targets": [],
+      "value": "ICT"
+    }, {
+      "id": "8c5e6b1d-f5f8-4472-aaa5-0a7977f8f8e6",
+      "comment": "",
+      "command": "echo",
+      "target": "Moving record ${name} to Airtable",
+      "targets": [],
+      "value": ""
     }, {
       "id": "6051f82c-c378-4c6c-8662-82f3e25da183",
       "comment": "",
@@ -175,6 +273,78 @@
       ],
       "value": "${selby}"
     }, {
+      "id": "d3b0788b-ad5d-4910-9a5e-4c7b11b30db2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[8]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${influence}"
+    }, {
+      "id": "50ec1590-9f80-4077-ba4d-d35d021b24ea",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[9]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${create}"
+    }, {
+      "id": "5c3331ab-d15e-4acc-9f0b-c8bb87eaa631",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[10]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${threat}"
+    }, {
+      "id": "694c3f6e-99ab-4f20-99bc-fa0638edcc60",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[11]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${ICT}"
+    }, {
+      "id": "e60bedcb-4554-4be1-9020-00853a78a0db",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[12]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${fullname}"
+    }, {
+      "id": "7d878152-53e1-441d-8343-e6a0ca9c60ca",
+      "comment": "",
+      "command": "//type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[12]/div/div/div/input",
+      "targets": [],
+      "value": "${photo}"
+    }, {
       "id": "8edc6fa9-a813-4199-9e93-0ef3060ed416",
       "comment": "",
       "command": "click",
@@ -193,6 +363,13 @@
       "target": "return Number(${player}) + 1;",
       "targets": [],
       "value": "player"
+    }, {
+      "id": "3ebd6377-d73d-4e34-bbbf-3f5ae15e12ea",
+      "comment": "",
+      "command": "echo",
+      "target": "Player to be processed is ${player}",
+      "targets": [],
+      "value": ""
     }, {
       "id": "ee3a9d56-045d-4e0f-b76e-405054c9919f",
       "comment": "",
