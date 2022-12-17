@@ -1,0 +1,215 @@
+{
+  "id": "8f0ad9cc-7689-4818-8a5a-a015177219b9",
+  "version": "2.0",
+  "name": "FLP NEW",
+  "url": "https://fantasy.premierleague.com",
+  "tests": [{
+    "id": "5d929834-d312-4984-829c-c1251e06bc38",
+    "name": "FPLMAIN",
+    "commands": [{
+      "id": "3f99691c-7eb5-4c38-a98d-53ffb89b573e",
+      "comment": "",
+      "command": "store",
+      "target": "1",
+      "targets": [],
+      "value": "player"
+    }, {
+      "id": "b327caaf-38bd-4d85-aa7d-21ec0bc4f157",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantasy.premierleague.com/statistics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb8f7ccb-c15c-4503-a3f2-0c95bf2decbc",
+      "comment": "",
+      "command": "while",
+      "target": "${player} < 2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "442d4f0b-74b1-4a27-9e9d-8a7386a14141",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[2]/button/div/div[2]/div[1]",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "e8bfd507-d0ec-4d8a-bae9-1ab45429a25d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[2]/button/div/div[2]/div[2]/span[1]",
+      "targets": [],
+      "value": "team"
+    }, {
+      "id": "55470616-d72b-4324-bdce-a7d2f864fcd3",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[2]/button/div/div[2]/div[2]/span[2]",
+      "targets": [],
+      "value": "POS"
+    }, {
+      "id": "928aab87-8a1f-4cb6-8589-e074b7ab2f8d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[3]",
+      "targets": [],
+      "value": "price"
+    }, {
+      "id": "2a6d9f12-719c-4aa5-9f6a-1c2f449c899c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[4]",
+      "targets": [],
+      "value": "selby"
+    }, {
+      "id": "30ed713d-f968-46a6-a013-d47430b7c329",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[5]",
+      "targets": [],
+      "value": "form"
+    }, {
+      "id": "ad318a85-79e2-49dc-94c5-0f6ac8865376",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"root\"]/div[2]/div/div[1]/table/tbody/tr[${player}]/td[6]",
+      "targets": [],
+      "value": "pts"
+    }, {
+      "id": "6051f82c-c378-4c6c-8662-82f3e25da183",
+      "comment": "",
+      "command": "open",
+      "target": "https://airtable.com/shrIndjQvzgQ58kIq",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b9fe0b5-8f2f-48a5-8081-8ffe881fb340",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[1]/div/div/div/input",
+      "targets": [
+        ["id=262347c1943a76839d74563f4ab8a092", "id"],
+        ["css=#\\32 62347c1943a76839d74563f4ab8a092", "css:finder"],
+        ["xpath=//input[@id='262347c1943a76839d74563f4ab8a092']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "0bae901b-f3c1-4b3c-9c9c-32d91008a7b5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[2]/div/div/div/input",
+      "targets": [
+        ["id=073feae6f73f5b4c3cb4dcc06aacfe81", "id"],
+        ["css=#\\30 73feae6f73f5b4c3cb4dcc06aacfe81", "css:finder"],
+        ["xpath=//input[@id='073feae6f73f5b4c3cb4dcc06aacfe81']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${team}"
+    }, {
+      "id": "e00f71d8-395a-4ef9-b2cc-ddd6724e92c8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[3]/div/div/div/input",
+      "targets": [
+        ["id=f4f793dc079e99011a9100a31c83b5bb", "id"],
+        ["css=#f4f793dc079e99011a9100a31c83b5bb", "css:finder"],
+        ["xpath=//input[@id='f4f793dc079e99011a9100a31c83b5bb']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${POS}"
+    }, {
+      "id": "3c106315-803f-4951-835b-b0fbbfd86c06",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[4]/div/div/div/input",
+      "targets": [
+        ["id=f28f8ef4c28a87fab7a006a556ee4af6", "id"],
+        ["css=#f28f8ef4c28a87fab7a006a556ee4af6", "css:finder"],
+        ["xpath=//input[@id='f28f8ef4c28a87fab7a006a556ee4af6']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${pts}"
+    }, {
+      "id": "2331e7b2-7ca7-4fcb-ad58-6c9b56c8bca6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[5]/div/div/div/input",
+      "targets": [
+        ["id=e1b4b51992e1bb1cf0a46d24a23151a1", "id"],
+        ["css=#e1b4b51992e1bb1cf0a46d24a23151a1", "css:finder"],
+        ["xpath=//input[@id='e1b4b51992e1bb1cf0a46d24a23151a1']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${form}"
+    }, {
+      "id": "f39fff0c-7013-4594-bf0f-c032a47dfe14",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[6]/div/div/div/input",
+      "targets": [
+        ["id=951be59dd7e862c72cf1b83d00e9b1b8", "id"],
+        ["css=#\\39 51be59dd7e862c72cf1b83d00e9b1b8", "css:finder"],
+        ["xpath=//input[@id='951be59dd7e862c72cf1b83d00e9b1b8']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${price}"
+    }, {
+      "id": "1b39110c-0eed-4148-bd90-489a3585b3d4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[7]/div/div/div/input",
+      "targets": [
+        ["id=bf648a8df76e616e5d6e3305ca8ac793", "id"],
+        ["css=#bf648a8df76e616e5d6e3305ca8ac793", "css:finder"],
+        ["xpath=//input[@id='bf648a8df76e616e5d6e3305ca8ac793']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${selby}"
+    }, {
+      "id": "8edc6fa9-a813-4199-9e93-0ef3060ed416",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submitButton",
+      "targets": [
+        ["css=.submitButton", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='hyperbaseContainer']/div[9]/div/main/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7482a86-73ef-40b6-bf6b-98bec9517f75",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Number(${player}) + 1;",
+      "targets": [],
+      "value": "player"
+    }, {
+      "id": "ee3a9d56-045d-4e0f-b76e-405054c9919f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "32316e15-6ba2-448b-af53-5bc11b3278ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d929834-d312-4984-829c-c1251e06bc38"]
+  }],
+  "urls": ["https://fantasy.premierleague.com/"],
+  "plugins": []
+}
