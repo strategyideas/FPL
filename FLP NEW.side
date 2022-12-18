@@ -10,7 +10,7 @@
       "id": "3f99691c-7eb5-4c38-a98d-53ffb89b573e",
       "comment": "Setting Start Player Index Set to 19 (Should be 1)",
       "command": "store",
-      "target": "1",
+      "target": "19",
       "targets": [],
       "value": "player"
     }, {
@@ -168,10 +168,24 @@
       "targets": [],
       "value": "ICT"
     }, {
+      "id": "8f0bd15c-9b0a-4163-a6ee-2b8373b2adf8",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[1]/div[1]/img@src",
+      "targets": [],
+      "value": "photox"
+    }, {
+      "id": "a110d0c1-94c7-4978-8e04-6a35c3ea3959",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var str = ${photox}; return(str.substring(67,100)); ",
+      "targets": [],
+      "value": "photo"
+    }, {
       "id": "8c5e6b1d-f5f8-4472-aaa5-0a7977f8f8e6",
       "comment": "",
       "command": "echo",
-      "target": "Moving record ${name} to Airtable",
+      "target": "Moving record ${name} to Airtable with ${photo}",
       "targets": [],
       "value": ""
     }, {
@@ -340,8 +354,8 @@
     }, {
       "id": "7d878152-53e1-441d-8343-e6a0ca9c60ca",
       "comment": "",
-      "command": "//type",
-      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[12]/div/div/div/input",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[13]/div/div/div/input",
       "targets": [],
       "value": "${photo}"
     }, {
@@ -550,6 +564,20 @@
       "targets": [],
       "value": "ICT"
     }, {
+      "id": "21aa77fb-3ac9-4701-b16d-028d03ac982f",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div[1]/div/dialog/div/div[2]/div[${divval}]/div[1]/div[1]/img@src",
+      "targets": [],
+      "value": "photox"
+    }, {
+      "id": "1b945281-5eac-4759-95d8-67ef869acd50",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var str = ${photox}; return(str.substring(67,100)); ",
+      "targets": [],
+      "value": "photo"
+    }, {
       "id": "0e6e2323-1129-4718-bf83-c69149f51d1f",
       "comment": "",
       "command": "echo",
@@ -723,7 +751,7 @@
       "id": "b6334759-f510-476f-871f-28904c8c866b",
       "comment": "",
       "command": "//type",
-      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[12]/div/div/div/input",
+      "target": "xpath=/html/body/div[1]/div[9]/div/main/div/div/div[1]/div[13]/div/div/div/input",
       "targets": [],
       "value": "${photo}"
     }, {
