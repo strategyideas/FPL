@@ -10,7 +10,7 @@
       "id": "3f99691c-7eb5-4c38-a98d-53ffb89b573e",
       "comment": "Setting Start Player Index Set to 19 (Should be 1)",
       "command": "store",
-      "target": "19",
+      "target": "1",
       "targets": [],
       "value": "player"
     }, {
@@ -397,7 +397,7 @@
     "name": "FPLMAIN (Page2)",
     "commands": [{
       "id": "c8ffe15f-766e-4c41-9f04-6e60235dc59e",
-      "comment": "Setting Start Player Index Set to 19 (Should be 1)",
+      "comment": "Setting Start Player Index Set to 1 (Should be 1)",
       "command": "store",
       "target": "1",
       "targets": [],
